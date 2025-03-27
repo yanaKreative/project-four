@@ -1,0 +1,58 @@
+//Media Query//
+@media (min-width: $breakpoint) {
+
+    .container {
+      max-width: 1400px;
+      @include block;
+    }
+    
+    .centered {
+      @include block;
+    }
+    
+    .row {
+      flex-direction: row;
+    }
+    
+    [class^=col] {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      align-items: center;
+    }
+    
+    [class^=col] + [class^=col] {
+      margin-left: 10px;
+    }
+    
+    @for $i from 1 through 12 {
+        .col-#{$i} 
+        {
+          flex: #{8.333% * $i} 
+        }
+    }
+    
+    .nav {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    
+    .nav-link {
+      flex-basis: 100px;
+    }
+    
+    .btn {
+      padding: 10px 30px;
+    }
+    
+    .btn + .btn {
+      margin-left: 10px;
+    }
+    
+    .logo {
+      margin-left: initial;
+      margin-right: initial;
+    }
+    
+    }
