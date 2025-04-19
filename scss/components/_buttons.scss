@@ -15,5 +15,9 @@
   @for $i from 1 through length($button-colors) {
     button:nth-child(#{$i}) {
         background-color: nth($button-colors, $i);
+
+         &:hover {
+          background-color: lighten(nth($button-colors, $i), 10%);
+        }
     }
   }
