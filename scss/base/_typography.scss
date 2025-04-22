@@ -1,15 +1,33 @@
 /* ============================================= */
+/*              Base styles                      */
+/* ============================================= */
+
+* {
+  font-family: $font;
+  color: $prim-color;
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.45em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ============================================= */
 /*              Typography                       */
 /* ============================================= */
 
 .headline-primary {
-    color: $headline-hover;
+    color: $headline-h;
     margin-left: 10px;
   }
   
   .headline-secondary {
     font-weight: $regular-font;
-    color: $color;
+    color: $prim-color;
   }
   
   .link {
@@ -23,6 +41,6 @@
     font-style: italic;
     margin-left: 20px;
     padding-left: 20px;
-    border-left: 8px solid $headline-hover;
+    border-left: 8px solid $headline-h;
     border-radius: 5px;
   }

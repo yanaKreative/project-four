@@ -1,17 +1,19 @@
+//Base//
+@import 'base/normalize';
+
 //Utilities//
 @import 'utilities/variables',
         'utilities/mixins';
 
 //Base//
 @import 'base/typography',
-        'base/normalize',
         'base/media';
 
 //Components//
 @import 'components/buttons',
+        'components/navigation',
         'components/forms',
         'components/grid',
-        'components/navigation',
         'components/images';
 
 
