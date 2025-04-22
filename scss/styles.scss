@@ -6,8 +6,7 @@
         'utilities/mixins';
 
 //Base//
-@import 'base/typography',
-        'base/media';
+@import 'base/typography';
 
 //Components//
 @import 'components/buttons',
@@ -16,4 +15,5 @@
         'components/grid',
         'components/images';
 
-
+//Base//    
+@import 'base/media';
